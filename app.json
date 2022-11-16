@@ -1,7 +1,9 @@
 {
   "expo": {
+    "jsEngine": "hermes",
     "name": "team-generator-2-0",
     "slug": "team-generator-2-0",
+    "owner": "alingoo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,23 +13,30 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.alingoo.teamgenerator20"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+
+      "package": "com.alingoo.teamgenerator20"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ca771f01-b313-4f4f-a5a6-f404fc291973"
+      }
     }
   }
 }
